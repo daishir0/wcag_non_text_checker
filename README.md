@@ -55,24 +55,50 @@ $ python wcag_non_text_checker.py https://www.yahoo.co.jp/
 {
   "Non-text Contents": [
     {
-      "xpath": "//div[contains(@class, \"_7uaWVw_YSgf_GKoctUM12\")]/span/img",
-      "description": "記事に関連する全画像サムネイル"
+      "xpath": "//header//h1[@class=\"_3YIqBohnzWyU3NQ8zb-mQI\"]//a/img",
+      "description": "Yahooロゴ画像",
+      "situation": "D",
+      "reason": "ロゴは視覚的な識別のための感覚的コンテンツ",
+      "wcag_judgment": "NG",
+      "judgment_reason": "alt属性が見つからない",
+      "success_techniques": [
+        "H37: img要素のalt属性を使用する",
+        "ARIA6: オブジェクトのラベルを提供するためにaria-labelを使用する"
+      ]
     },
     {
-      "xpath": "//div[contains(@class, \"_7uaWVw_YSgf_GKoctUM12\")]/span/picture/img",
-      "description": "画像サムネイル（picture要素内）"
+      "xpath": "//div[contains(@class, \"_2TzkLph0QyL9hAv5c53WeY\")]//span[contains(@class, \"_2Uq6Pw5lfFfxr_OD36xHp6\")]",
+      "description": "ヘッダーのサービスアイコン画像",
+      "situation": "F",
+      "reason": "装飾的な画像要素",
+      "wcag_judgment": "OK",
+      "judgment_reason": "背景にCSSで表示されているため、支援技術からは無視される",
+      "success_techniques": [
+        "C9: 装飾目的の画像を付加するためにCSSを使用する"
+      ]
     },
     {
-      "xpath": "//div[contains(@class, \"_2dkkFdF6iwwsvj59371Trg\")]/span[contains(@class, \"_1I_5hzC8N7rC_DyCqrkXsj\")]",
-      "description": "コメント数に関連するアイコン"
+      "xpath": "//div[@id=\"TabTopics\"]//img",
+      "description": "ニュース記事のサムネイル画像",
+      "situation": "D",
+      "reason": "感覚的な情報を提供するコンテンツ",
+      "wcag_judgment": "NG",
+      "judgment_reason": "多くの画像にalt属性が欠落している",
+      "success_techniques": [
+        "H37: img要素のalt属性を使用する",
+        "ARIA6: オブジェクトのラベルを提供するためにaria-labelを使用する"
+      ]
     },
     {
-      "xpath": "//span[contains(@class, \"_2Uq6Pw5lfFfxr_OD36xHp6\")]",
-      "description": "様々なアイコンと画像"
-    },
-    {
-      "xpath": "//div[contains(@class, \"_2MXJ1iB31yVKsR-3VMKR4N\")]/span[contains(@class, \"_2VDw54wcDejORZkozpOysW\")][contains(text(), \"0:\")]",
-      "description": "動画の長さが表示されている要素"
+      "xpath": "//time[contains(@class, \"_2MXJ1iB31yVKsR-3VMKR4N\")]",
+      "description": "動画の長さを示すタイムコード",
+      "situation": "B",
+      "reason": "時間依存メディアの補助的情報",
+      "wcag_judgment": "OK",
+      "judgment_reason": "テキストで時間が明確に表示されている",
+      "success_techniques": [
+        "G73: 非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する"
+      ]
     }
   ]
 }
@@ -148,24 +174,50 @@ $ python wcag_non_text_checker.py https://www.yahoo.co.jp/
 {
   "Non-text Contents": [
     {
-      "xpath": "//div[contains(@class, \"_7uaWVw_YSgf_GKoctUM12\")]/span/img",
-      "description": "記事に関連する全画像サムネイル"
+      "xpath": "//header//h1[@class=\"_3YIqBohnzWyU3NQ8zb-mQI\"]//a/img",
+      "description": "Yahooロゴ画像",
+      "situation": "D",
+      "reason": "ロゴは視覚的な識別のための感覚的コンテンツ",
+      "wcag_judgment": "NG",
+      "judgment_reason": "alt属性が見つからない",
+      "success_techniques": [
+        "H37: img要素のalt属性を使用する",
+        "ARIA6: オブジェクトのラベルを提供するためにaria-labelを使用する"
+      ]
     },
     {
-      "xpath": "//div[contains(@class, \"_7uaWVw_YSgf_GKoctUM12\")]/span/picture/img",
-      "description": "画像サムネイル（picture要素内）"
+      "xpath": "//div[contains(@class, \"_2TzkLph0QyL9hAv5c53WeY\")]//span[contains(@class, \"_2Uq6Pw5lfFfxr_OD36xHp6\")]",
+      "description": "ヘッダーのサービスアイコン画像",
+      "situation": "F",
+      "reason": "装飾的な画像要素",
+      "wcag_judgment": "OK",
+      "judgment_reason": "背景にCSSで表示されているため、支援技術からは無視される",
+      "success_techniques": [
+        "C9: 装飾目的の画像を付加するためにCSSを使用する"
+      ]
     },
     {
-      "xpath": "//div[contains(@class, \"_2dkkFdF6iwwsvj59371Trg\")]/span[contains(@class, \"_1I_5hzC8N7rC_DyCqrkXsj\")]",
-      "description": "コメント数に関連するアイコン"
+      "xpath": "//div[@id=\"TabTopics\"]//img",
+      "description": "ニュース記事のサムネイル画像",
+      "situation": "D",
+      "reason": "感覚的な情報を提供するコンテンツ",
+      "wcag_judgment": "NG",
+      "judgment_reason": "多くの画像にalt属性が欠落している",
+      "success_techniques": [
+        "H37: img要素のalt属性を使用する",
+        "ARIA6: オブジェクトのラベルを提供するためにaria-labelを使用する"
+      ]
     },
     {
-      "xpath": "//span[contains(@class, \"_2Uq6Pw5lfFfxr_OD36xHp6\")]",
-      "description": "様々なアイコンと画像"
-    },
-    {
-      "xpath": "//div[contains(@class, \"_2MXJ1iB31yVKsR-3VMKR4N\")]/span[contains(@class, \"_2VDw54wcDejORZkozpOysW\")][contains(text(), \"0:\")]",
-      "description": "動画の長さが表示されている要素"
+      "xpath": "//time[contains(@class, \"_2MXJ1iB31yVKsR-3VMKR4N\")]",
+      "description": "動画の長さを示すタイムコード",
+      "situation": "B",
+      "reason": "時間依存メディアの補助的情報",
+      "wcag_judgment": "OK",
+      "judgment_reason": "テキストで時間が明確に表示されている",
+      "success_techniques": [
+        "G73: 非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する"
+      ]
     }
   ]
 }
